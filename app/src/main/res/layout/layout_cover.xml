@@ -1,0 +1,52 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             xmlns:tools="http://schemas.android.com/tools"
+             android:layout_width="match_parent"
+             android:layout_height="match_parent"
+             android:background="@android:color/white"
+             tools:context=".MainActivity">
+
+
+    <ImageView
+        android:id="@+id/image_cover"
+        android:layout_width="200dip"
+        android:layout_height="200dip"
+        android:layout_gravity="center"
+        android:scaleType="fitCenter"
+        android:src="@drawable/cover_expand"/>
+
+    <LinearLayout
+        android:id="@+id/buttom_bar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/buttom_bar_height"
+        android:layout_gravity="bottom"
+        android:gravity="center"
+        android:orientation="horizontal"
+        >
+
+        <ImageView
+            android:id="@+id/action_fav"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:scaleType="centerInside"
+            android:src="@drawable/ic_action_fav_disable"/>
+
+        <ImageView
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:scaleType="centerInside"
+            android:src="@drawable/ic_action_ban_disable"
+            android:id="@+id/action_ban"
+            />
+
+        <ImageView
+            android:id="@+id/action_next"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:scaleType="centerInside"
+            android:src="@drawable/ic_action_next_disable"/>
+    </LinearLayout>
+
+</FrameLayout>

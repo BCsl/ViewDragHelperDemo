@@ -1,0 +1,32 @@
+<com.android.hellocsl.viewdraghelperdemo.CoverLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@android:color/white"
+        android:paddingBottom="@dimen/buttom_bar_height"
+        tools:context=".MainActivity">
+
+
+        <ListView
+            android:id="@+id/list"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            >
+
+        </ListView>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="4dip"
+            android:layout_gravity="bottom"
+            android:background="@drawable/shadow_top"
+            >
+        </TextView>
+    </FrameLayout>
+</com.android.hellocsl.viewdraghelperdemo.CoverLayout>
